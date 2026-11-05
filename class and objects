@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+// The CLASS: A blueprint detailing what a Car is
+class Car {
+public:
+    std::string brand; // Attribute
+    int year;          // Attribute
+
+    void drive() {     // Method
+        std::cout << brand << " goes vroom!" << std::endl;
+    }
+};
+
+int main() {
+    // OBJECTS: Actual instances built from the blueprint
+    Car car1; 
+    car1.brand = "Toyota";
+    car1.year = 2024;
+
+    Car car2;
+    car2.brand = "Ford";
+    car2.year = 2026;
+
+    // Accessing object methods and data
+    car1.drive(); // Outputs: Toyota goes vroom!
+    car2.drive(); // Outputs: Ford goes vroom!
+
+    return 0;
+}
